@@ -1,0 +1,39 @@
+{
+  "name": "Glacial",
+  "version": "1.0.0",
+  "description": "To-do list meets Bumble plug-in.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "start": "node ./backend/server.js",
+    "heroku-postbuild": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueprintNYC/Glacial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlueprintNYC/Glacial/issues"
+  },
+  "homepage": "https://github.com/BlueprintNYC/Glacial#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "webpack": "^4.29.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "nodemon": "^1.18.9",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.2.1"
+  }
+}
