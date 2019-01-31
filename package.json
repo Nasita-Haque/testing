@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "cross-env NODE_ENV=production webpack --config ./webpack.prod.config.js --progress",
-    "start": "npm run build && node ./backend/server.js "
+    "build": "webpack --mode production",
+    "start": "npm run build && node ./backend/server.js"
   },
   "repository": {
     "type": "git",
