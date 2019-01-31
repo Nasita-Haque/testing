@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack -p --config ./webpack.config.js --progress",
-    "start": "node ./frontend/app.jsx"
+    "start": "node ./backend/server.js"
   },
   "repository": {
     "type": "git",
