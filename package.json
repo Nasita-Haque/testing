@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "start": "node ./backend/server.js",
-    "heroku-postbuild": "webpack -p"
+    "build": "webpack --mode production",
+    "start": "npm run build && node ./backend/server.js"
   },
   "repository": {
     "type": "git",
