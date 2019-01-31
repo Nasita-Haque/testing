@@ -9,9 +9,7 @@ const port = process.env.PORT || 3000;
 const expressMiddleware = require('./middleware/index.js');
 
 //Middleware
-app.use(bodyparser.urlencoded({ extended: false }));
-app.use(bodyparser.json());
-app.use(express.static(path.join(__dirname, '../frontend/public')));
+expressMiddleware(app);
 
 // Frontend Route
 app.get('/', (req, res) => {
