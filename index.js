@@ -5,15 +5,14 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000;
 
-//Files
-const expressMiddleware = require('./middleware/index.js');
-
 //Middleware
-expressMiddleware(app);
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Frontend Route
-app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, '../frontend/index.html'));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
 
 //Server
