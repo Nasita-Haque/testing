@@ -7,7 +7,7 @@
     "dev": "webpack --mode development",
     "build": "heroku config:set NPM_CONFIG_PRODUCTION=false",
     "start": "npm run build && node ./backend/server.js",
-    "heroku-postbuild": "webpack -p"
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "repository": {
     "type": "git",
