@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "npm run build && node src/server/index.js"
+    "start": "npm run build && node ./backend/server.js"
   },
   "repository": {
     "type": "git",
